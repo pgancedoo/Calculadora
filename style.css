@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);  
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 120px repeat(5, 60px);
+    box-shadow: 0px 0px 60px 20px rgba(0, 0, 0, 0.448);
+    border-radius: 25px;
+}
+
+button {
+    cursor: pointer;
+    margin: 0px;
+    padding: 0;
+    font-size: 25px;
+    color: white;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.551);
+}
+
+button.colornaranja:active{
+    background: rgb(179, 116, 0);
+}
+
+button.color:active{
+    background: rgb(75, 75, 75);
+}
+
+button.colorclaro:active{
+    background: rgb(20, 20, 20);
+}
+
+.doblenum {
+    grid-column: span 2;
+}
+
+.pantalla {
+    grid-column: 1 / -1;
+    background: linear-gradient(90deg, rgb(21, 21, 21) 0%, rgb(0, 0, 0) 100%);
+    border-radius: 25px 25px 0px 0px;
+}
+
+.colornaranja {
+    background: linear-gradient(149deg, orange 0%, rgb(132, 86, 0) 100%);
+}
+
+.color {
+    background: linear-gradient(149deg, rgb(109, 109, 109) 0%, rgb(58, 58, 58) 100%);
+}
+
+.colorclaro {
+    background: linear-gradient(149deg, rgb(44, 44, 44) 0%, rgb(20, 20, 20) 100%);
+}
+
+.curvaizq {
+    border-radius: 0px 0px 0px 25px;
+}
+
+.curvadcha {
+    border-radius: 0px 0px 25px 0px;
+}
+
+h1 {
+    text-align: right;
+    color: white;
+    margin-top: 60px;
+    margin-right: 25px;
+    font-size: 50px;
+}
