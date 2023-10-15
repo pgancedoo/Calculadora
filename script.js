@@ -11,7 +11,6 @@ function updateDisplay() {
 
 function appendNumber(number) {
   if (resultCalculated) {
-    // Si se ha calculado un resultado anteriormente, reinicia las operaciones.
     clearDisplay();
   }
 
@@ -66,7 +65,6 @@ function performCalculation() {
 }
 
 function formatResult(result) {
-  // Limita el resultado a 9 caracteres y redondea el último dígito.
   const roundedResult = parseFloat(result.toFixed(8));
   return roundedResult.toString().replace(".", ",").substring(0, 9);
 }
@@ -107,8 +105,4 @@ function percentage() {
     .replace(".", ",");
   updateDisplay();
 }
-
-// Agrega más funciones y características según sea necesario.
-
-// Llama a updateDisplay() inicialmente para mostrar "0" en la pantalla.
 updateDisplay();
